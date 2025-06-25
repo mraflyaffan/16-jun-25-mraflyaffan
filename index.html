@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Segitiga</title>
+  <link rel="stylesheet" href="css\style.css" />
+
+
+  <!--favicon-->
+  <link rel="icon" type="image/x-icon" href="assets\favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="assets\favicon.png" alt="Logo Fortopoli" class="logo" />
+      <h1>KALKULATOR SEGITIGA</h1>
+    </div>
+    <hr>
+<h3>SELAMAT DATANG!</h3>
+    <div class="desc">
+      Wesbsite ini akan membantu anda dalam menghitung luas maupun keliling dari segitiga<br>
+      
+    </div>
+
+    <section class="calculator">
+      <h2>Hitung Luas</h2>
+      <input type="number" id="alas" placeholder="Masukkan alas" />
+      <input type="number" id="tinggi" placeholder="Masukkan tinggi" />
+      <button onclick="hitungLuas()">Hitung Luas</button>
+      <button onclick="resetLuas()">Reset</button>
+      <p id="hasilLuas"></p>
+    </section>
+
+    <section class="calculator">
+      <h2>Hitung Keliling</h2>
+      <input type="number" id="sisi1" placeholder="Masukkan sisi 1" />
+      <input type="number" id="sisi2" placeholder="Masukkan sisi 2" />
+      <input type="number" id="sisi3" placeholder="Masukkan sisi 3" />
+      <button onclick="hitungKeliling()">Hitung Keliling</button>
+      <button onclick="resetKeliling()">Reset</button>
+      <p id="hasilKeliling"></p>
+    </section>
+  </div>
+
+  <script src="js\script.js"></script>
+</body>
+</html>
